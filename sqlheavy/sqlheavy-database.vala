@@ -129,6 +129,18 @@ namespace SQLHeavy {
     }
 
     /**
+     * Return the last SQL error 
+     *
+     */
+    public string get_last_error () {
+        string message = "" ;
+        if( db != null )
+        {
+            message = db.errmsg () ;
+        }
+        return message ;
+    }
+    /**
      * {@inheritDoc}
      */
     public SQLHeavy.Database database { owned get { return this; } }
