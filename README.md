@@ -8,8 +8,8 @@ The original version of the library is [available here](https://gitorious.org/sq
 ```
 git clone https://github.com/PerfectCarl/sqlheavy.git
 cd sqlheavy
-mkdir build && cd build 
-cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_INSTALL_PREFIX=/usr ../
+./autogen.sh
+./configure
 make 
 sudo make install
 ```
