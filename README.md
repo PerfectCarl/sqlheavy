@@ -9,7 +9,7 @@ The original version of the library is [available here](https://gitorious.org/sq
 git clone https://github.com/PerfectCarl/sqlheavy.git
 cd sqlheavy
 ./autogen.sh
-./configure
+./configure --prefix=/usr
 make 
 sudo make install
 ```
